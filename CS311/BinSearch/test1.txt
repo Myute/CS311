@@ -1,0 +1,51 @@
+Script started on Tue 02 Oct 2018 09:56:42 PM PDT
+]0;higbe005@empress:~/CS311/BinSearch[?1034h[higbe005@empress BinSearch]$ g++ binsearch.cpp
+]0;higbe005@empress:~/CS311/BinSearch[higbe005@empress BinSearch]$ ./a.out
+What do you want to look for? 1
+comparing against an element in slot4
+comparing against an element in slot1
+comparing against an element in slot0
+Found it in position 1
+]0;higbe005@empress:~/CS311/BinSearch[higbe005@empress BinSearch]$ ./a.out
+What do you want to look for? 19
+comparing against an element in slot4
+comparing against an element in slot7
+comparing against an element in slot8
+comparing against an element in slot9
+Found it in position 10
+]0;higbe005@empress:~/CS311/BinSearch[higbe005@empress BinSearch]$ ./a.out
+What do you want to look for? 5
+comparing against an element in slot4
+comparing against an element in slot1
+comparing against an element in slot2
+Found it in position 3
+]0;higbe005@empress:~/CS311/BinSearch[higbe005@empress BinSearch]$ ./a.out
+What do you want to look for? 17
+comparing against an element in slot4
+comparing against an element in slot7
+comparing against an element in slot8
+Found it in position 9
+]0;higbe005@empress:~/CS311/BinSearch[higbe005@empress BinSearch]$ ./a.out
+What do you want to look for? 21
+comparing against an element in slot4
+comparing against an element in slot7
+comparing against an element in slot8
+comparing against an element in slot9
+Element not found
+]0;higbe005@empress:~/CS311/BinSearch[higbe005@empress BinSearch]$ ./a.out
+What do you want to look for? 0
+comparing against an element in slot4
+comparing against an element in slot1
+comparing against an element in slot0
+Element not found
+]0;higbe005@empress:~/CS311/BinSearch[higbe005@empress BinSearch]$ ./a.out
+What do you want to look for? 6
+comparing against an element in slot4
+comparing against an element in slot1
+comparing against an element in slot2
+comparing against an element in slot3
+Element not found
+]0;higbe005@empress:~/CS311/BinSearch[higbe005@empress BinSearch]$ exit
+exit
+
+Script done on Tue 02 Oct 2018 09:57:15 PM PDT

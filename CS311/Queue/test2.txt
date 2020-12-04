@@ -1,0 +1,9 @@
+Script started on Tue 18 Sep 2018 04:30:34 PM PDT
+]0;higbe005@empress:~/CS311/Queue[?1034h[higbe005@empress Queue]$ g++ queue.h queue.cpp client2.cpp
+]0;higbe005@empress:~/CS311/Queue[higbe005@empress Queue]$ ./a.out
+[ BBA BBB BBC BCA BCB BCC CAA CAB CAC CBA CBB CBC CCA CCB CCC AAAA AAAB AAAC AABA AABB AABC AACA AACB AACC ABAA ABAB ABAC ABBA ABBB ABBC ABCA ABCB ABCC ACAA ACAB ACAC ACBA ACBB ACBC ACCA ACCB ACCC BAAA BAAB BAAC BABA BABB BABC BACA BACB ]
+The Queue has overflowed.
+]0;higbe005@empress:~/CS311/Queue[higbe005@empress Queue]$ exci[K[Kit
+exit
+
+Script done on Tue 18 Sep 2018 04:30:54 PM PDT

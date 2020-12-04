@@ -1,0 +1,63 @@
+// CS311
+// HW9 Client file
+//INSTRUCTION: Complete this file and comment using How to Comment file.
+//---------------------------------------------
+
+// ================================================
+// HW#: HW9 dgraph client
+// Name: Kevyn Higbee
+// File type:  hw9client.cpp
+// ================================================
+
+#include <iostream>
+#include "dgraph.h"
+
+// main function
+int main()
+{ 
+  char input;
+
+  //0.Declare table object
+  dgraph table;
+  //1.fillTable()
+  table.fillTable();
+  //2.displayGraph()
+  table.displayGraph();
+
+
+  //while (the user does not want to stop)
+  do
+  {
+    // get user input
+    cout << "Enter a vertex name or '0' to quit" << endl;
+    cin >> input;
+    if(input != '0')
+    {
+      try
+      {
+        //a.the user will specify which vertex    
+        //b.findOutDegree of the vertex and display the result
+        cout << table.findOutDegree(input) << " edges to go out to" << endl;
+        //b.findAdjacency of the vertex and display the result (see Hint)
+        //c.catch exception to display error mesg but do not exit
+      }
+      catch(llist::Underflow e1)
+      {
+        // do nothing
+      }
+      catch(llist::OutOfRange e2)
+      {
+        // do nothing
+      }
+    }
+  }
+  while(input != '0');
+}
+
+/*
+Hint:
+  slist l1;
+  l1 = G.findAdjacency('a');
+  // how do you display l1?  Hint: it is an slist from HW6.
+
+*/

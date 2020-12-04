@@ -1,0 +1,213 @@
+Script started on Sat 08 Sep 2018 12:27:58 PM PDT
+]0;higbe005@empress:~/CS311/Stack[?1034h[higbe005@empress Stack]$ g++ stack.h stack.cpp s[Kclient1.coo[K[Kpp
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: 34+
+3
+--------------
+4
+3
+--------------
+7
+--------------
+Result is: 7.
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: 345+*
+3
+--------------
+4
+3
+--------------
+5
+4
+3
+--------------
+9
+3
+--------------
+27
+--------------
+Result is: 27.
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: 722+-
+7
+--------------
+2
+7
+--------------
+2
+2
+7
+--------------
+4
+7
+--------------
+3
+--------------
+Result is: 3.
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: 34+56++
+3
+--------------
+4
+3
+--------------
+7
+--------------
+5
+7
+--------------
+6
+5
+7
+--------------
+11
+7
+--------------
+18
+--------------
+Result is: 18.
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: 12+34*45+-+
+1
+--------------
+2
+1
+--------------
+3
+--------------
+3
+3
+--------------
+4
+3
+3
+--------------
+12
+3
+--------------
+4
+12
+3
+--------------
+5
+4
+12
+3
+--------------
+9
+12
+3
+--------------
+3
+3
+--------------
+6
+--------------
+Result is: 6.
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: 1234567891234
+1
+--------------
+2
+1
+--------------
+3
+2
+1
+--------------
+4
+3
+2
+1
+--------------
+5
+4
+3
+2
+1
+--------------
+6
+5
+4
+3
+2
+1
+--------------
+7
+6
+5
+4
+3
+2
+1
+--------------
+8
+7
+6
+5
+4
+3
+2
+1
+--------------
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------
+1
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------
+Stack Overflow (too many operands)
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: +
+Stack Underflow (not enough operands)
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: 3+
+3
+--------------
+Stack Underflow (not enough operands)
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: 3#
+3
+--------------
+Invalid item (bad operand or operator)
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ ./a.out
+type a postfix expression: 2345+
+2
+--------------
+3
+2
+--------------
+4
+3
+2
+--------------
+5
+4
+3
+2
+--------------
+9
+3
+2
+--------------
+Result is: 9.
+Incomplete Expression
+]0;higbe005@empress:~/CS311/Stack[higbe005@empress Stack]$ exit
+exit
+
+Script done on Sat 08 Sep 2018 12:31:32 PM PDT

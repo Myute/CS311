@@ -1,0 +1,41 @@
+Script started on Fri 12 Oct 2018 05:19:57 PM PDT
+]0;higbe005@empress:~/CS311/Sorts/1quicksort[?1034h[higbe005@empress 1quicksort]$ g++ partition.cpp
+]0;higbe005@empress:~/CS311/Sorts/1quicksort[higbe005@empress 1quicksort]$ ./a.out
+How many elements would you like to enter into the array? (must be less than 10): 7
+Enter the elements one per line
+1
+2
+3
+4
+5
+6
+7
+returning from partition
+The array was partitioned
+1 2 3 | 4 | 5 6 7 
+]0;higbe005@empress:~/CS311/Sorts/1quicksort[higbe005@empress 1quicksort]$ g++ quicksort.cpp
+]0;higbe005@empress:~/CS311/Sorts/1quicksort[higbe005@empress 1quicksort]$ ./a.out
+How many elements would you like to enter into the array? (must be less than 10) 7
+Enter elements one per line..
+1
+2
+3
+4
+5
+6
+7
+QuickSort: first is 0 and last is 6
+Partition was called with first 0 and last 6
+ ..The pivot element is 4
+QuickSort: first is 0 and last is 2
+Partition was called with first 0 and last 2
+ ..The pivot element is 2
+QuickSort: first is 4 and last is 6
+Partition was called with first 4 and last 6
+ ..The pivot element is 6
+Sorted array:
+1 2 3 4 5 6 7 
+]0;higbe005@empress:~/CS311/Sorts/1quicksort[higbe005@empress 1quicksort]$ exit
+exit
+
+Script done on Fri 12 Oct 2018 05:21:01 PM PDT

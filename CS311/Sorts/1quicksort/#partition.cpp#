@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+
+// Implement the function partition in this file.
+// Eneter your code in places identified by **
+
+//----------------------------------------
+//CS311 HW4 partition
+//Your name: Kevyn Higbee
+//Compiler: g++
+//-----------------------------------------
+
+// This function partitions the array a into two sections
+// for elements smaller than pivot and larger than pivot.
+// first is the index of first element in the section to be partitioned.
+// last is the index of last element in the section to be partitioned
+// The function returns the index of pivot.
+int partition(int a[], int first, int last)
+{
+  int i = first; // pointer from the left
+  int j = last; // pointer from the right
+  int tmp, pivot = (first+last)/2;
+  
+  while(i<=j)
+    {
+      while(a[i]>a[pivot])
+	i++;
+      while(a[j]<a[pivot])
+	j--;
+      if(i<=j)
+	{
+	  tmp=a[i];
+	  a[i]=a[j];
+	  a[j]=tmp;
+	  j--;
+	  i++;
+	} 
+    }
+  return pivot;
+}
+
+int main()
+{
+  int x;  // number of elements
+  int num[10];
+    cout << "How many elements would you like to enter into the array? (must be less than 10): ";
+  cin >> x;
+  cout << "Enter the elements one per line" << endl;
+  for (int i = 0; i < x; i++)
+    { cin >> num[i]; }
+
+
+  int pivot_index = partition(num, 0, x-1);
+
+  cout << "The array was partitioned" << endl;
+  // display up to the pivot without endl
+  for (int i = 0; i < pivot_index; i++)
+    cout << num[i] << " ";
+ 
+  // display the pivot
+  cout << "| " << num[pivot_index] << " | " ;
+    
+  // display from the pivot without endl
+  for (int i = pivot_index+1; i < x; i++)
+    cout << num[i] << " ";
+
+  cout << endl;
+
+}

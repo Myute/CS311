@@ -1,0 +1,74 @@
+// CS311 Quick Sort - plug in your partition function here
+// Kevyn Higbee
+// CS 311 - HW4
+// Oct 12 2018
+//----------------------------------------------------------------
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+
+// copy your partition function from partition.cpp
+int partition(int a[], int first, int last)
+{
+  cout << "Partition was called with " << "first " << first << " and last " << last << endl;
+  int i = first;
+  int j = last;
+  int tmp, pivot = (first+last)/2;
+ 
+  while(i<=j)
+    {
+      while(a[i]<a[pivot])
+	i++;
+      while(a[j]>a[pivot])
+	j--;
+      if(i<=j)
+	{
+	  tmp = a[i];
+	  a[i] = a[j];
+	  a[j] = tmp;
+	  j--;
+	  i++;
+	}
+    }
+  
+  return pivot;
+}
+
+
+// sorting a section starting at first and ending at last
+void quicksort(int a[], int first, int last)
+{
+  if (first >= last) return;
+
+  cout << "QuickSort: first is " << first << " and last is " << last << endl;
+
+  int pivotIndex = partition(a, first, last);
+    
+  cout << " ..The pivot element is " << a[pivotIndex] << endl;
+  
+  // sort the first section in place
+  if(pivotIndex>first)
+  quicksort(a, first, pivotIndex-1);
+  // sort the second section in place
+  if(pivotIndex<last)
+  quicksort(a, pivotIndex+1, last);
+}
+
+
+int main()
+{
+  int x;
+  int nums[10];
+  cout << "How many elements would you like to enter into the array? (must be less than 10) ";
+  cin >> x;
+  cout << "Enter elements one per line.." << endl;
+  for (int i = 0; i < x; i++)
+    { cin >> nums[i]; }
+
+  quicksort(nums, 0, x-1);
+
+  cout << "Sorted array:" << endl;
+  for (int i = 0; i < x; i++) // up to the partition
+      {cout << nums[i] << " "; }
+  cout << endl;
+}

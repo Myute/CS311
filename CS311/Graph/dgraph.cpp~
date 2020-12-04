@@ -1,0 +1,73 @@
+//CS311 dgraph.cpp
+// INSTRUCTION:
+//  Complete all the functions you listed in dgraph.h
+//  Comment the file completely using How to Comment file.
+//  Use HW9-help.docx to finish the functions.
+//-------------------------------------------------------
+
+//======================================================
+// HW#: HW9 dgraph
+// Name: Kevyn Higbee
+// File Type: dGraph.cpp
+//========================================================
+
+using namespace std;
+
+#include <iostream>
+#include "dgraph.h"
+#include <fstream>
+#include <iomanip>
+
+dgraph::dgraph() // initialize vertexName (blank) and visit numbers (0)    // initialize countUsed to be 0
+{
+    for(Gvertex tmp: Gtable)
+    {
+        tmp.vertexName = ' ';
+        tmp.visit = 0;
+    }
+}
+dgraph::~dgraph()   // do we have to delete all nodes of slists in table??
+// Question: If we do not do this, will the llist destructor be called automatically??? Try it.
+{
+
+}
+void dgraph::fillTable()  // make sure to read from table.txt file
+{
+    string fileName = "table.txt";
+    ifstream fin;
+    char x;
+    while(fin >> Gtable[countUsed].vertexName)
+    {
+        fin >> Gtable[countUsed].outDegree;
+        for(int i = 0; i < Gtable[countUsed].outDegree; i++)
+        {
+            fin >> x;
+            Gtable[countUsed].adjacentOnes.addRear(x);
+        }
+        countUsed++;
+    }
+
+}
+void dgraph::displayGraph() // make sure to display
+// in a really nice format -- all columns
+{
+    for(Gvertex tmp : Gtable)
+    {
+        if(tmp.vertexName != ' ')
+        {
+            cout << tmp.vertexName << " " << tmp.outDegree << tmp.visit << " ";
+            tmp.adjacentOnes.displayAll();
+            cout << endl;
+        }
+    }
+}
+int dgraph::findOutDegree(char V)// throws exception
+// does not use a loop
+{
+    return Gtable[V-65].outDegree;
+}
+slist dgraph::findAdjacency(char V)// throws exception
+// does not use a loop
+{
+    return Gtable[V-65].adjacentOnes;
+}

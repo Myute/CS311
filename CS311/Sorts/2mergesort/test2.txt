@@ -1,0 +1,65 @@
+Script started on Fri 12 Oct 2018 05:18:33 PM PDT
+]0;higbe005@empress:~/CS311/Sorts/2mergesort[?1034h[higbe005@empress 2mergesort]$ g++ combine.cpp
+]0;higbe005@empress:~/CS311/Sorts/2mergesort[higbe005@empress 2mergesort]$ ./a.out
+How many elements would you like to enter into each sublist?
+3
+Please enter elements of List1 in increasing order:
+element :1
+element :2
+element :3
+Please enter elements of List2 in increasing order:
+element :4
+element :5
+element :6
+comparison between 1 and 4
+comparison between 2 and 4
+comparison between 3 and 4
+The combined list is: 1 2 3 4 5 6 
+]0;higbe005@empress:~/CS311/Sorts/2mergesort[higbe005@empress 2mergesort]$ g++ merfe[K[Kgesort.cpp
+]0;higbe005@empress:~/CS311/Sorts/2mergesort[higbe005@empress 2mergesort]$ ./a.out
+Enter the elements one per line.
+Enter -1 to stop.
+Element:1
+Element:5
+Element:3
+Element:4
+Element:7
+Element:6
+Element:2
+Element:-1
+Merge sort called on: [ 1 5 3 4 7 6 2 ]
+1st half:
+[ 1 5 3 ]
+2nd half:
+[ 4 7 6 2 ]
+Merge sort called on: [ 1 5 3 ]
+1st half:
+[ 1 ]
+2nd half:
+[ 5 3 ]
+Merge sort called on: [ 5 3 ]
+1st half:
+[ 5 ]
+2nd half:
+[ 3 ]
+Merge sort called on: [ 4 7 6 2 ]
+1st half:
+[ 4 7 ]
+2nd half:
+[ 6 2 ]
+Merge sort called on: [ 4 7 ]
+1st half:
+[ 4 ]
+2nd half:
+[ 7 ]
+Merge sort called on: [ 6 2 ]
+1st half:
+[ 6 ]
+2nd half:
+[ 2 ]
+Sorted array:
+[ 1 2 3 4 5 6 7 ]
+]0;higbe005@empress:~/CS311/Sorts/2mergesort[higbe005@empress 2mergesort]$ exit
+exit
+
+Script done on Fri 12 Oct 2018 05:19:43 PM PDT

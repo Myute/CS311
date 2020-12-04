@@ -1,0 +1,5 @@
+Script started on Fri 12 Oct 2018 05:17:53 PM PDT
+]0;higbe005@empress:~/CS311/Sorts/1quicksort[?1034h[higbe005@empress 1quicksort]$ g++ combine.cpp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on Fri 12 Oct 2018 05:18:04 PM PDT

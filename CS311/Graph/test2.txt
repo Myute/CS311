@@ -1,0 +1,272 @@
+Script started on Mon 03 Dec 2018 06:38:38 PM PST
+]0;higbe005@empress:~/CS311/Graph[?1034h[higbe005@empress Graph]$ exitstop./a.outg++ llist.h llist.cpp slist.h slist.cpp dgraph.h dgraph.cpp hw9client.cpp[1Pclient.cpp1client.cpp0client.cpp[C[C[C[1@ [1@s[1@t[1@a[1@c[1@k[1@.[1@h[C[1@ [1@s[1@t[1@a[1@c[1@k[1@.[1@c[1@p[1@p
+]0;higbe005@empress:~/CS311/Graph[higbe005@empress Graph]$ ./a.out
+Filled the Table
+A 20 [ B F ]
+
+B 20 [ C G ]
+
+C 10 [ H ]
+
+D 00 [ empty ]
+
+E 00 [ empty ]
+
+F 20 [ I E ]
+
+G 00 [ empty ]
+
+H 20 [ G I ]
+
+I 30 [ A G E ]
+
+Removing A from stack
+	Visiting A as 1
+[ B F ]
+pushed F.
+pushed B.
+Stack:
+B
+F
+--------------
+
+A 21 [ B F ]
+
+B 20 [ C G ]
+
+C 10 [ H ]
+
+D 00 [ empty ]
+
+E 00 [ empty ]
+
+F 20 [ I E ]
+
+G 00 [ empty ]
+
+H 20 [ G I ]
+
+I 30 [ A G E ]
+
+Removing B from stack
+	Visiting B as 2
+[ C G ]
+pushed G.
+pushed C.
+Stack:
+C
+G
+F
+--------------
+
+A 21 [ B F ]
+
+B 22 [ C G ]
+
+C 10 [ H ]
+
+D 00 [ empty ]
+
+E 00 [ empty ]
+
+F 20 [ I E ]
+
+G 00 [ empty ]
+
+H 20 [ G I ]
+
+I 30 [ A G E ]
+
+Removing C from stack
+	Visiting C as 3
+[ H ]
+pushed H.
+Stack:
+H
+G
+F
+--------------
+
+A 21 [ B F ]
+
+B 22 [ C G ]
+
+C 13 [ H ]
+
+D 00 [ empty ]
+
+E 00 [ empty ]
+
+F 20 [ I E ]
+
+G 00 [ empty ]
+
+H 20 [ G I ]
+
+I 30 [ A G E ]
+
+Removing H from stack
+	Visiting H as 4
+[ G I ]
+pushed I.
+pushed G.
+Stack:
+G
+I
+G
+F
+--------------
+
+A 21 [ B F ]
+
+B 22 [ C G ]
+
+C 13 [ H ]
+
+D 00 [ empty ]
+
+E 00 [ empty ]
+
+F 20 [ I E ]
+
+G 00 [ empty ]
+
+H 24 [ G I ]
+
+I 30 [ A G E ]
+
+Removing G from stack
+	Visiting G as 5
+[ empty ]
+Stack:
+I
+G
+F
+--------------
+
+A 21 [ B F ]
+
+B 22 [ C G ]
+
+C 13 [ H ]
+
+D 00 [ empty ]
+
+E 00 [ empty ]
+
+F 20 [ I E ]
+
+G 05 [ empty ]
+
+H 24 [ G I ]
+
+I 30 [ A G E ]
+
+Removing I from stack
+	Visiting I as 6
+[ A G E ]
+pushed E.
+Stack:
+E
+G
+F
+--------------
+
+A 21 [ B F ]
+
+B 22 [ C G ]
+
+C 13 [ H ]
+
+D 00 [ empty ]
+
+E 00 [ empty ]
+
+F 20 [ I E ]
+
+G 05 [ empty ]
+
+H 24 [ G I ]
+
+I 36 [ A G E ]
+
+Removing E from stack
+	Visiting E as 7
+[ empty ]
+Stack:
+G
+F
+--------------
+
+A 21 [ B F ]
+
+B 22 [ C G ]
+
+C 13 [ H ]
+
+D 00 [ empty ]
+
+E 07 [ empty ]
+
+F 20 [ I E ]
+
+G 05 [ empty ]
+
+H 24 [ G I ]
+
+I 36 [ A G E ]
+
+Removing G from stack
+	Visiting G as 8
+[ empty ]
+Stack:
+F
+--------------
+
+A 21 [ B F ]
+
+B 22 [ C G ]
+
+C 13 [ H ]
+
+D 00 [ empty ]
+
+E 07 [ empty ]
+
+F 20 [ I E ]
+
+G 05 [ empty ]
+
+H 24 [ G I ]
+
+I 36 [ A G E ]
+
+Removing F from stack
+	Visiting F as 8
+[ I E ]
+Stack:
+[ empty ]
+--------------
+
+A 21 [ B F ]
+
+B 22 [ C G ]
+
+C 13 [ H ]
+
+D 00 [ empty ]
+
+E 07 [ empty ]
+
+F 28 [ I E ]
+
+G 05 [ empty ]
+
+H 24 [ G I ]
+
+I 36 [ A G E ]
+
+]0;higbe005@empress:~/CS311/Graph[higbe005@empress Graph]$ exit
+exit
+
+Script done on Mon 03 Dec 2018 06:38:58 PM PST

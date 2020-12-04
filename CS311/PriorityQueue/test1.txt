@@ -1,0 +1,20 @@
+Script started on Fri 16 Nov 2018 06:14:59 PM PST
+]0;higbe005@empress:~/CS311/PriorityQueue[?1034h[higbe005@empress PriorityQueue]$ exitot./a.outg++ pqueue.h pqueue.cpp pqclient.cpp
+]0;higbe005@empress:~/CS311/PriorityQueue[higbe005@empress PriorityQueue]$ ./a.out
+Jobs: 12 20 
+Jobs: 1 12 20 30 
+Jobs: 1 5 6 7 20 30 12 
+printing: 1
+Jobs: 6 5 12 7 20 30 
+printing: 6
+Jobs: 12 5 30 7 20 
+printing: 12
+Jobs: 20 5 30 7 
+printing: 20
+Jobs: 7 5 30 
+Jobs: 2 7 5 30 
+Jobs: 2 3 7 30 5 
+]0;higbe005@empress:~/CS311/PriorityQueue[higbe005@empress PriorityQueue]$ exit
+exit
+
+Script done on Fri 16 Nov 2018 06:15:06 PM PST
